@@ -1,0 +1,14 @@
+pipeline{
+
+    agent {
+        dockerfile true
+    }
+
+    stages ('check') {
+        echo "hi"
+    }
+    
+    triggers {
+        pollSCM ('* * * * *')
+    }
+}
