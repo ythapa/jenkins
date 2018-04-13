@@ -4,8 +4,12 @@ pipeline{
         dockerfile true
     }
 
-    stage ('check') {
-        echo "hi"
+    stages {
+        stage ('check'){
+            step ('build') {
+                echo "hi"
+            }
+        }
     }
     
     triggers {
