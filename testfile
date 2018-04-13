@@ -4,7 +4,7 @@ pipeline{
         dockerfile true
     }
 
-    stages ('check') {
+    stage ('check') {
         echo "hi"
     }
     
